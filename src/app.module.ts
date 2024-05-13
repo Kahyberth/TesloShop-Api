@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { JoiValidationSchema } from './common/config/validSchema.joi';
+import { ProductsModule } from './products/products.module';
 
 
 @Module({
@@ -24,7 +25,9 @@ import { JoiValidationSchema } from './common/config/validSchema.joi';
       password: process.env.DB_PASSWORD,
       autoLoadEntities: true,
       synchronize: true
-    })
+    }),
+
+    ProductsModule
 
   ],
   controllers: [],
