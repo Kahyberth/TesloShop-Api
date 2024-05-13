@@ -9,8 +9,17 @@
 
 # Teslo API
 
-1. Up database
+1. Clone project
+2. pnpm install
+3. Clone the ``.env.template`` file and rename ``.env`` 
+4. Change the environment variable
 
+5. Up database
 ```
 docker-compose up -d
+```
+
+6. Start app
+```
+pnpm start:dev
 ```
