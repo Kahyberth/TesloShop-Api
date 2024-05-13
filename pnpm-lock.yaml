@@ -47,6 +47,9 @@ importers:
       typeorm:
         specifier: ^0.3.20
         version: 0.3.20(pg@8.11.5)(ts-node@10.9.2(@types/node@20.12.11)(typescript@5.4.5))
+      uuid:
+        specifier: ^9.0.1
+        version: 9.0.1
     devDependencies:
       '@nestjs/cli':
         specifier: ^10.0.0
@@ -69,6 +72,9 @@ importers:
       '@types/supertest':
         specifier: ^6.0.0
         version: 6.0.2
+      '@types/uuid':
+        specifier: ^9.0.8
+        version: 9.0.8
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.0.0
         version: 6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
@@ -698,6 +704,9 @@ packages:
 
   '@types/supertest@6.0.2':
     resolution: {integrity: sha512-137ypx2lk/wTQbW6An6safu9hXmajAifU/s7szAHLN/FeIm5w7yR0Wkl9fdJMRSHwOn4HLAI0DaB2TOORuhPDg==}
+
+  '@types/uuid@9.0.8':
+    resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
 
   '@types/validator@13.11.10':
     resolution: {integrity: sha512-e2PNXoXLr6Z+dbfx5zSh9TRlXJrELycxiaXznp4S5+D2M3b9bqJEitNHA5923jhnB2zzFiZHa2f0SI1HoIahpg==}
@@ -3847,6 +3856,8 @@ snapshots:
     dependencies:
       '@types/methods': 1.1.4
       '@types/superagent': 8.1.7
+
+  '@types/uuid@9.0.8': {}
 
   '@types/validator@13.11.10': {}
 
