@@ -48,6 +48,13 @@ export class Product {
     @Column('text')
     gender: string;
 
+
+    @Column('text', {
+        array: true,
+        default: []
+    })
+    tag?: string[]
+
     @BeforeInsert()
     checkSlugInsert() {
 
@@ -69,4 +76,5 @@ export class Product {
             .replaceAll(' ', '_')
             .replaceAll("'", '')
     }
+
 }
