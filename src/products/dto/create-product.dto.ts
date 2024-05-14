@@ -7,7 +7,6 @@ export class CreateProductDto {
     title: string;
 
     @IsNumber()
-    @IsPositive()
     @IsOptional()
     price?: number;
 
@@ -20,7 +19,6 @@ export class CreateProductDto {
     slug?: string;
 
     @IsInt()
-    @IsPositive()
     @IsOptional()
     stock?: number;
 
